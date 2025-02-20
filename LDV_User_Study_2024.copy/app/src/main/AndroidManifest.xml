@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="LDV_User_Study_2024"
+        android:lockTaskMode="if_whitelisted"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.FullScreen"
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".series_off"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".series_on_p11"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".series_on_s9"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".series_on_s21"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".training_scatter_s21"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".p11_combinations"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".s9_combinations"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".s21_combinations"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".training_line_s9"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".p11_line_chart"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".s9_line_chart"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".s21_line_chart"
+            android:noHistory="true"
+            android:exported="false" />
+        <activity
+            android:name=".GraphSelector"
+            android:exported="true" />
+        <activity
+            android:name=".participant"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
